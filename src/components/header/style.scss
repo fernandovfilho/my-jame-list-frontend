@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  background: url("../../img/logo.png") no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+}
+
+.search-container {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.search-input {
+  padding: 10px;
+  height: 15px;
+  background-color: #1b2c48;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  color: white;
+}
+
+.search-input-icon {
+  color: white;
+  background-color: #1b2c48;
+  height: 15px;
+  padding: 10px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
