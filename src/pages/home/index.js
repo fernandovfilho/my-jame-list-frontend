@@ -1,11 +1,10 @@
-import React from 'react'
-
-import './style.scss'
+import React from "react";
+import "./style.scss";
 
 export function HomePage() {
   return (
-    <div className='home-page'>
-      Home
-    </div>
-  )
+    <>
+      <div className="home-page"></div>
+    </>
+  );
 }
