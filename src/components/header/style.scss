@@ -1,49 +1,49 @@
 @import "../../theme/colors";
+@import "../../theme/dimensions";
 
-.container {
+.header-container {
   display: flex;
   width: 100%;
-  height: 146px;
   justify-content: center;
-}
 
-.header {
-  min-width: 1200px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-}
+  .header {
+    min-width: $min-page-width;
+    width: 80%;
+    display: flex;
+    align-items: center;
+  }
 
-.logo {
-  width: 390px;
-}
+  .logo {
+    width: 390px;
+  }
 
-.search-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-}
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
 
-.search-input {
-  padding: 10px;
-  margin-left: 100px;
-  width: 286px;
-  height: 24px;
-  font-size: large;
-  background-color: $primary-color;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  color: white;
-}
+  .search-input {
+    padding: 10px;
+    margin-left: 100px;
+    width: 286px;
+    height: 24px;
+    font-size: large;
+    background-color: $primary-color;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+  }
 
-.search-input-icon {
-  color: white;
-  background-color: $primary-color;
-  height: 24px;
-  width: 24px;
-  font-size: 27px;
-  padding: 10px;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+  .search-input-icon {
+    color: white;
+    background-color: $primary-color;
+    height: 24px;
+    width: 24px;
+    font-size: 27px;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
 }

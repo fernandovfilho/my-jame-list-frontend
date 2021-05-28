@@ -6,7 +6,7 @@ import "./style.scss";
 
 export function Header() {
   return (
-    <div className="container">
+    <div className="header-container">
       <div className="header">
         <img src={logo} alt="MyJameList" className="logo" />
         <form action="#">
