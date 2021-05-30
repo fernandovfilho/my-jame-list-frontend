@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1260px;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+section {
+  margin-top: 50px;
+  .title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    strong {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 46px;
+      text-transform: uppercase;
+
+      color: #fef769;
+
+      mix-blend-mode: normal;
+    }
+  }
+}
+
+.myBestGames {
+  .games {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+
+    div {
+      img {
+        width: 237px;
+        height: 356px;
+      }
+    }
+  }
+}
+
+.ratedGames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gameOfTheYear {
+  height: auto;
+  width: 407px;
+  margin-right: 18px;
+}
+.bestGames {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.myRatedGames {
+}
+
+.myRatedGamesSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    width: 333px;
+    height: 44px;
+
+    background: #1b2c48;
+    border-radius: 6px;
+    padding: 0 10px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 46px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+  }
+
+  .selectLabel {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+  }
+
+  select {
+    font-family: Poppins;
+    font-size: 18px;
+  }
+}
