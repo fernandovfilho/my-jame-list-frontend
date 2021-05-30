@@ -1,11 +1,11 @@
 import styles from "./styles.module.scss";
 import game from '../../assets/games/returnal.jpg'
 
-export function CardGame() {
+export function CardGame({titleGame, linkGame, imageGame = game}) {
   return (
     <div className={styles.container}>
-      <a href="/">
-        <img src={game} alt="Imagem jogo" />
+      <a href={linkGame}>
+        <img src={imageGame} alt={titleGame} />
       </a>
     </div>
   );

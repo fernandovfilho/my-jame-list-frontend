@@ -1,7 +1,6 @@
 import React from "react";
 import { CardGame } from "../../components/CardGame";
 import { HomeBanner } from "../../components/homeBanner";
-// import "./style.module.scss";
 
 import styles from './style.module.scss'
 
