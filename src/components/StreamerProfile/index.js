@@ -1,4 +1,5 @@
 import picProfile from "../../assets/jeffprofile.png";
+import { FaTwitch } from "react-icons/fa";
 
 import styles from "./styles.module.scss";
 
@@ -17,6 +18,7 @@ conversas legais para a minha audiência. :] | contato@jefff.live`,
       <div className={styles.info}>
         <p className={styles.name}>{name}</p>
         <a href={"https://" + channel} className={styles.channel}>
+          <FaTwitch size={34} color="#FFF" style={{ marginRight: "10px" }} />
           {channel}
         </a>
         <p className={styles.bio}>{bio}</p>
