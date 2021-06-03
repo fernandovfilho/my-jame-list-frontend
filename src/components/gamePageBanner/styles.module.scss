@@ -1,0 +1,110 @@
+@import "../../theme/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  margin-top: 20px;
+
+  img {
+    height: 600px;
+    margin-right: 54px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+}
+
+.gameInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.gameInfoDescription {
+  color: white;
+  h1 {
+    font-weight: bold;
+    font-size: 80px;
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+  }
+}
+
+%row {
+  display: flex;
+  flex-direction: row;
+}
+
+%scorePriceTitle {
+  color: $secondary-color;
+  font-weight: bold;
+  margin: 0px;
+  font-size: 36px;
+}
+
+%scorePriceValue {
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.jeffContainer {
+  @extend %row;
+}
+
+.chatContainer {
+  @extend %row;
+}
+
+.jeffScore {
+  margin-right: 60px;
+  .title {
+    @extend %scorePriceTitle;
+  }
+  .score {
+    @extend %scorePriceValue;
+    font-size: 180px;
+    margin-top: -50px;
+  }
+}
+
+.chatScore {
+  margin-right: 80px;
+  .title {
+    @extend %scorePriceTitle;
+  }
+  .score {
+    @extend %scorePriceValue;
+    font-size: 120px;
+    margin-top: -25px;
+  }
+}
+
+.gamePrice {
+  .priceContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -10px;
+  }
+  .moneySign {
+    @extend %scorePriceValue;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .priceValue {
+    @extend %scorePriceValue;
+    font-size: 70px;
+  }
+  .title {
+    @extend %scorePriceTitle;
+  }
+}
+
