@@ -42,6 +42,8 @@ Ex: $ git push -u origin feature/docs-contrib
 ```
 
 Vá em seu github e crie uma nova pullRequest da branch que você criou para a develop do repositório principal
+![pullRequest](./.github/pullRequest.png)
+![pullRequestContrib](./.github/pullRequestContrib.png)
 
 # Guia de execução
 
