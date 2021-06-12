@@ -8,13 +8,30 @@
   width: auto;
   margin-top: 20px;
 
-  img {
+  .gameCoverContainer {
+    position: relative;
     height: 600px;
-    margin-right: 54px;
+    .gameCoverImage {
+      height: 600px;
+      margin-right: 54px;
+  
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+    }
 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
+    .awardsContainer {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      bottom: -10px;
+      right: 70px;
+
+      img {
+        padding-left: 5px;
+      }
+    }
   }
+
 }
 
 .gameInfo {

@@ -4,6 +4,9 @@ import styles from "./styles.module.scss";
 import moment from "moment";
 import 'moment/locale/pt-br';
 
+import Goty from "../../img/GOTY.png";
+import Joty from "../../img/JOTY.png";
+
 export function GamePageBanner({
   gameImage = gameCover,
   gameName = "It takes two",
@@ -20,11 +23,27 @@ export function GamePageBanner({
     "Xbox Series S",
     "PC",
   ],
+  hasGoty = true,
+  hasJoty = true,
 }) {
   moment.locale("pt-br");
   return (
     <div className={styles.container}>
-      <img src={gameImage} alt={`Capa de ${gameName}`} />
+      <div className={styles.gameCoverContainer}>
+        <img src={gameImage} alt={`Capa de ${gameName}`} className={styles.gameCoverImage}/>
+        <div className={styles.awardsContainer}>
+          {
+            hasGoty
+            ? <img src={Goty} alt="" />
+            : null
+          }
+          {
+            hasJoty
+            ? <img src={Joty} alt="" />
+            : null
+          }
+        </div>
+      </div>
       <div className={styles.gameInfo}>
         <div className={styles.gameInfoDescription}>
           <h1>{gameName}</h1>
