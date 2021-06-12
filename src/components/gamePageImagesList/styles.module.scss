@@ -1,0 +1,33 @@
+@import "../../theme/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+
+  h1 {
+    font-size: 50px;
+    margin: 0px;
+    color: white;
+  }
+  .imagesListContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1260px;
+
+    margin: 15px 0px;
+
+    img {
+      border-radius: 10px;
+      height: 226px;
+      width: 400px;
+    }
+  }
+}
+
+
+
+

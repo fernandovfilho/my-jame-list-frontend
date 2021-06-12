@@ -1,0 +1,27 @@
+@import "../../theme/colors.scss";
+
+.noImageContainer {
+  height: 218px;
+  width: 400px;
+  border-radius: 10px;
+  border: 4px solid $primary-color;
+  background-color: $background-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px;
+    color: #FFFFFF84;
+  }
+  p {
+    font-size: 16px;
+    margin: 0px;
+    color: #FFFFFF84;
+  }
+}
+
