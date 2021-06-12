@@ -1,0 +1,124 @@
+@import "../../theme/colors.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1260px;
+  padding: 0px 15px;
+  .authorContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    .by {
+      font-family: Poppins;
+      font-size: 16px;
+      color: white;
+      margin: 0px;
+    }
+    .authorName {
+      font-weight: bold;
+      font-family: Poppins;
+      font-size: 20px;
+      color: white;
+      margin: 0px;
+    }
+  }
+}
+
+.commentCard {
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 15px;
+  background-color: $primary-color;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+
+  .divider {
+    width: 2px;
+    height: 175px;
+    background-color: #414E63;
+    margin: 0px 25px;
+  }
+
+  .commentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    p {
+      color: white;
+      text-align: justify;
+      font-size: 16px;
+      margin: 0;
+    }
+    img {
+      height: 100px;
+    }
+  }
+  .scoreAndPriceContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .scoreContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      flex: 4;
+      .scoreTitle {
+        color: $secondary-color;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .scoreValue {
+        color: white;
+        font-size: 80px;
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+    .priceContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      flex: 6;
+      .priceTitle {
+        color: $secondary-color;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .priceValueContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        .moneySign {
+          font-size: 40px;
+          color: white;
+          font-weight: bold;
+          margin: 0px;
+          margin-top: 18px;
+        }
+        .priceValue {
+          font-size: 80px;
+          color: white;
+          font-weight: bold;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

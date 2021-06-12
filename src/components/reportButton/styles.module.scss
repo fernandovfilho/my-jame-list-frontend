@@ -1,0 +1,26 @@
+@import "../../theme/colors.scss";
+
+button {
+  height: 30px;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  background-color: $background-color;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  img {
+    margin-right: 10px;
+    color: #FFFFFF84;
+  }
+
+  p {
+    color: #FFFFFF84;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Poppins;
+  }
+}
