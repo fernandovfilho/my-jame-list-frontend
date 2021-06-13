@@ -21,7 +21,9 @@ export function Profile() {
           <p className={styles.title}>
             MEU <strong>JOGO DO ANO</strong>
           </p>
-          <div>{/* Add Component CardGame - PullRequest #9 */}</div>
+          <div className={styles.cardGameOfTheYear}>
+            {/* Add Component CardGame - PullRequest #9 */}
+          </div>
         </div>
 
         <div className={styles.bestGames}>
@@ -29,7 +31,9 @@ export function Profile() {
             <strong>OS MELHORES</strong> AVALIADOS
           </p>
 
-          <div>{/* Add Component RatedGame - Issues #11 */}</div>
+          <div className={styles.cardRatedGame}>
+            {/* Add Component RatedGame - Issues #11 */}
+          </div>
         </div>
       </section>
 
@@ -38,16 +42,22 @@ export function Profile() {
           <p className={styles.title}>
             MINHAS<strong> AVALIAÇÕES</strong>
           </p>
+
           <input type="text" />
-          <p className={styles.selectLabel}>Organizar por:</p>
-          <select>
-            <option value="">Mais recente</option>
-            <option value="">Menores Preço</option>
-            <option value="">Menores Notas</option>
-          </select>
+
+          <div className={styles.selectedFilter}>
+            <p className={styles.selectLabel}>Organizar por:</p>
+            <select>
+              <option value="">Mais recente</option>
+              <option value="">Menores Preço</option>
+              <option value="">Menores Notas</option>
+            </select>
+          </div>
         </div>
 
-        <div>{/* Add Component RatedGame - Issues #11 */}</div>
+        <div className={styles.cardRatedGame}>
+          {/* Add Component RatedGame - Issues #11 */}
+        </div>
       </section>
     </div>
   );

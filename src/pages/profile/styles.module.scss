@@ -16,7 +16,6 @@ section {
     font-size: 36px;
     line-height: 46px;
     text-transform: uppercase;
-    margin-bottom: 35px;
 
     color: #ffffff;
 
@@ -38,6 +37,7 @@ section {
 
 .myBestGames {
   .games {
+    margin-top: 35px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 15px;
@@ -61,11 +61,20 @@ section {
   height: auto;
   width: 407px;
   margin-right: 18px;
+
+  .cardGameOfTheYear {
+    margin-top: 35px;
+  }
 }
+
 .bestGames {
   display: flex;
   flex: 1;
   flex-direction: column;
+
+  .cardRatedGame {
+    margin-top: 35px;
+  }
 }
 
 .myRatedGames {
@@ -76,7 +85,6 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 35px;
 
   input {
     width: 333px;
@@ -101,9 +109,8 @@ section {
   .selectLabel {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 18px;
-    text-transform: uppercase;
 
     color: #ffffff;
 
@@ -113,5 +120,17 @@ section {
   select {
     font-family: Poppins;
     font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+  }
+}
+
+.selectedFilter {
+  display: flex;
+  flex-direction: row;
+  p {
+    font-weight: bold;
+    margin-right: 33px;
   }
 }
