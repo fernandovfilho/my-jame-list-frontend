@@ -22,7 +22,15 @@
   flex-direction: column;
   justify-content: center;
 }
+.groupChannel {
+  display: flex;
+  flex-direction: row;
 
+  a {
+    margin-left: 10px;
+    text-decoration: none;
+  }
+}
 .name {
   font-family: Poppins;
   font-style: normal;

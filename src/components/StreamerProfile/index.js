@@ -17,10 +17,12 @@ conversas legais para a minha audiência. :] | contato@jefff.live`,
       <img src={image} alt={name} />
       <div className={styles.info}>
         <p className={styles.name}>{name}</p>
-        <a href={"https://" + channel} className={styles.channel}>
+        <div className={styles.groupChannel}>
           <FaTwitch size={34} color="#FFF" style={{ marginRight: "10px" }} />
-          {channel}
-        </a>
+          <a href={"https://" + channel} className={styles.channel}>
+            {channel}
+          </a>
+        </div>
         <p className={styles.bio}>{bio}</p>
       </div>
     </div>
