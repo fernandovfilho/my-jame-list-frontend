@@ -1,8 +1,61 @@
+import { useState } from "react";
+import { RatedGame } from "../../components/ratedGame";
 import { StreamerProfile } from "../../components/StreamerProfile";
 
 import styles from "./styles.module.scss";
 
 export function Profile() {
+  const [bestRatedGames, setBetRatedGames] = useState([
+    {
+      title: "Read Dead Redemption 2",
+      average: "9.8",
+      price: "100",
+      description: "",
+    },
+    {
+      title: "Fall guys",
+      average: "10",
+      price: "30",
+      description: "",
+    },
+    {
+      title: "Returnal",
+      average: "8",
+      price: "100",
+      description: "",
+    },
+  ]);
+
+  const [myRatingGames, setMyRatingGames] = useState([
+    {
+      title: "Read Dead Redemption 2",
+      day: "26",
+      month: "outubro",
+      year: "2018",
+      average: "9.8",
+      price: "100",
+      description: "",
+    },
+    {
+      title: "Fall guys",
+      day: "04",
+      month: "agosto",
+      year: "2020",
+      average: "10",
+      price: "30",
+      description: "",
+    },
+    {
+      title: "Returnal",
+      day: "30",
+      month: "abril",
+      year: "2021",
+      average: "8",
+      price: "100",
+      description: "",
+    },
+  ]);
+
   return (
     <div className={styles.container}>
       <StreamerProfile />
@@ -32,7 +85,19 @@ export function Profile() {
           </p>
 
           <div className={styles.cardRatedGame}>
-            {/* Add Component RatedGame - Issues #11 */}
+            {bestRatedGames.map((bestRatedGame) => {
+              return (
+                <RatedGame
+                  title={bestRatedGame.title}
+                  day={bestRatedGame.day}
+                  month={bestRatedGame.month}
+                  year={bestRatedGame.year}
+                  average={bestRatedGame.average}
+                  price={bestRatedGame.price}
+                  description={bestRatedGame.description}
+                />
+              );
+            })}
           </div>
         </div>
       </section>
@@ -56,7 +121,19 @@ export function Profile() {
         </div>
 
         <div className={styles.cardRatedGame}>
-          {/* Add Component RatedGame - Issues #11 */}
+          {myRatingGames.map((myRatedGame) => {
+            return (
+              <RatedGame
+                title={myRatedGame.title}
+                day={myRatedGame.day}
+                month={myRatedGame.month}
+                year={myRatedGame.year}
+                average={myRatedGame.average}
+                price={myRatedGame.price}
+                description={myRatedGame.description}
+              />
+            );
+          })}
         </div>
       </section>
     </div>
