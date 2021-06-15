@@ -1,0 +1,26 @@
+.container {
+  z-index: 5;
+
+  background: #071224;
+  border: 2px solid #1b2c48;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  max-width: 660px;
+  height: auto;
+
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.comment {
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
