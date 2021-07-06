@@ -26,7 +26,6 @@ import ReactPaginate from 'react-paginate';
 class Pajination extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
 
     this.pageCount = props.pageCount;
     this.marginPagesDisplayed = props.marginPagesDisplayed == null ? 1 : props.marginPagesDisplayed;
