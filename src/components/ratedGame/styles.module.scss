@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background: #1b2c48;
+  border-radius: 12px;
+  height: 90px;
+  margin-bottom: 13px;
+}
+
+.groupIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57px;
+  height: 55px;
+
+  background: #071224;
+  border: 1.03084px solid #1b2c48;
+  border-radius: 6px;
+
+  margin: 0px 17px 0px 17px;
+
+  cursor: pointer;
+}
+
+.game {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+
+  .gameTitle {
+    flex: 1;
+
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 46px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .gameDate {
+    font-family: Poppins;
+    font-size: 24px;
+    line-height: 45px;
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-shadow: 0px 1.78436px 1.78436px rgba(0, 0, 0, 0.25);
+
+    strong {
+      font-weight: bold;
+    }
+  }
+}
+
+.groupInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 300px;
+  margin-right: 42px;
+}
+
+.divider {
+  width: 2px;
+  height: 70px;
+  max-width: 50px;
+  background-color: #414e63;
+  margin: 0px 25px;
+}
+
+.groupAverage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .labelAverage {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 16.0592px;
+    line-height: 24px;
+
+    color: #fef769;
+
+    mix-blend-mode: normal;
+    text-shadow: 0px 1.78436px 1.78436px rgba(0, 0, 0, 0.25);
+  }
+  .price {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 44.6089px;
+    line-height: 45px;
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    text-shadow: 0px 1.78436px 1.78436px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.groupPrice {
+  .labelPrice {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #fef769;
+
+    mix-blend-mode: normal;
+    text-shadow: 0px 1.78436px 1.78436px rgba(0, 0, 0, 0.25);
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    text-shadow: 0px 1.78436px 1.78436px rgba(0, 0, 0, 0.25);
+
+    .price {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 44.6089px;
+      line-height: 45px;
+
+      color: #ffffff;
+
+      mix-blend-mode: normal;
+      text-shadow: 0px 1.78436px 1.78436px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
