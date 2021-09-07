@@ -36,3 +36,12 @@ textarea:focus,
 input:focus {
   outline: none;
 }
+
+.btn-jame {
+  color: white;
+  background-color: $background-color;
+}
+
+*, *::before, *::after {
+  box-sizing: unset;
+}
