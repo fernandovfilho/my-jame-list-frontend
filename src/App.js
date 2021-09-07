@@ -10,7 +10,7 @@ export default function App() {
         <Switch>
           {routes.map((route) => {
             return (
-              <Route exact path={route.path} component={route.component} />
+              <Route exact path={route.path} key={route.key} component={route.component} />
             );
           })}
         </Switch>

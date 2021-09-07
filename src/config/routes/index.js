@@ -4,5 +4,6 @@ export const routes = [
   {
     path: '/',
     component: HomePage,
+    key: 'HomePage',
   },
 ]
