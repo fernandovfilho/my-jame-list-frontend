@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# My Jame List - Guia de contribuição
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para você que quer contribuir no **My Jame List** siga o passo a passo abaixo:
 
-## Available Scripts
+## Contribuição com issue:
 
-In the project directory, you can run:
+Caso você não saiba programar ou não esta com tempo em ajudar no código, exites
+a forma de contribuição com **Issues**, com ela você pode relatar um problema (BUG) que esta acontecendo em determinada situação do site, ou até mesmo solicitar uma nova funcionalidade que seja interessante para o site, basta ir para o repositório [clicando aqui](https://github.com/fernandovfilho/my-jame-list-frontend) e no menu clicar em [_Issues_](https://github.com/fernandovfilho/my-jame-list-frontend/issues), apos clique em **New issue**
 
-### `yarn start`
+_Obs: É necessário ter uma conta no github_
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Issue](./.github/issue.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Faça sua contribuição, com titulo e descrição, e depois envie clicando em **Submit new issue**.
+![Issue](./.github/issueContrib.png)
 
-### `yarn test`
+## Contribuição com código:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# Faça um fork do repositório no seu github
+```
 
-### `yarn build`
+![fork](./.github/fork.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Faça um clone do repositório
+$ git clone https://github.com/fernandovfilho/my-jame-list-frontend.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Certifique-se que esteja na branch develop
+$ git checkout develop
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Crie uma nova branch na ramificação da develop
+$ git checkout -b <Nome da branch>
+Ex: $ git checkout -b feature/docs-contrib
 
-### `yarn eject`
+# Faça sua funcionalidade e envie para o seu github
+$ git add .
+$ git commit -m "Minha nova funcionalidade"
+$ git push -u origin <Nome da branch>
+Ex: $ git push -u origin feature/docs-contrib
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Vá em seu github e crie uma nova pullRequest da branch que você criou para a develop do repositório principal
+![pullRequest](./.github/pullRequest.png)
+![pullRequestContrib](./.github/pullRequestContrib.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Guia de execução
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Requisitos**:
 
-## Learn More
+NodeJS: v12.x.x
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm: v6.14.x
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Porta **3000** do computador deve estar liberada
+Apos feito o clone do projeto em seu computador instale as dependências
 
-### Code Splitting
+`npm install` ou `yarn`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Inicie o projeto com:
 
-### Analyzing the Bundle Size
+`npm run start` ou `yarn start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acesse em: [http://localhost:3000](http://localhost:3000)
